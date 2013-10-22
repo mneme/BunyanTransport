@@ -1,0 +1,15 @@
+{
+  "name": "logship",
+  "version": "0.0.1",
+  "description": "Logshipper",
+  "main": "index.js",
+  "private": true,
+  "author": "Softhouse <david.olsson@softhouse.se>",
+  "dependencies": {
+    "nork-tail": "~0.0.1",
+    "mysql": "~2.0.0",
+    "socket.io": "~0.9.16",
+    "nodemailer": "~0.5.2",
+    "stringify-object" : "~0.1.7"
+  }
+}
