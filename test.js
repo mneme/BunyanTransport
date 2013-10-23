@@ -7,7 +7,6 @@ var connection = {
       database  : "billing"
     }
 
-
 var my = new shipper.transports.Mysql(
   {
     connection: connection,
@@ -28,6 +27,14 @@ var smtp = {
     pass: "bullfest"
   }
 };
+
+var mailOptions = {
+  protocol:'SMTP',
+  protocolOptions:smtp,
+  to:['david.olsson@softhouse.se'],
+  from:'error@billing.se',
+  subject:'Critical Error'
+}
 
 var s = new shipper.transports.Socket({port:8080});
 
